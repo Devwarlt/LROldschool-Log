@@ -1,0 +1,11 @@
+[00:15:02] System.NullReferenceException: Object reference not set to an instanc
+e of an object.
+   at wServer.networking.handlers.EnemyHitPacketHandler.Handle(Player player, Re
+almTime time, Int32 targetId, Byte bulletId, Boolean killed, Int32 damage) in C:
+\Users\devwarlt\Pictures\LoESoft - Prod Project\Game Server v5\wServer\networkin
+g\handlers\EnemyHitPacketHandler.cs:line 31
+   at wServer.networking.handlers.EnemyHitPacketHandler.<>c__DisplayClass2_0.<Ha
+ndlePacket>b__0(RealmTime t) in C:\Users\devwarlt\Pictures\LoESoft - Prod Projec
+t\Game Server v5\wServer\networking\handlers\EnemyHitPacketHandler.cs:line 17
+   at wServer.realm.LogicTicker.TickLoop() in C:\Users\devwarlt\Pictures\LoESoft
+ - Prod Project\Game Server v5\wServer\realm\LogicTicker.cs:line 82
