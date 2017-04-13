@@ -1,0 +1,34 @@
+[23:21:54] System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`
+2 selector)
+   at wServer.logic.loot.Loot.ShowBags(Enemy enemy, IEnumerable`1 loots, Player[
+] owners) in C:\Users\devwarlt\Pictures\LoESoft - Prod Project\Game Server v5\wS
+erver\logic\loot\Loots.cs:line 126
+   at wServer.logic.loot.Loot.AddBagsToWorld(Enemy enemy, IList`1 shared, IDicti
+onary`2 soulbound) in C:\Users\devwarlt\Pictures\LoESoft - Prod Project\Game Ser
+ver v5\wServer\logic\loot\Loots.cs:line 121
+   at wServer.logic.loot.Loot.Handle(Enemy enemy, RealmTime time) in C:\Users\de
+vwarlt\Pictures\LoESoft - Prod Project\Game Server v5\wServer\logic\loot\Loots.c
+s:line 95
+   at wServer.logic.BehaviorDb.ctor.<>c__DisplayClass0_0.<Init>b__0(Object sende
+r, BehaviorEventArgs e) in C:\Users\devwarlt\Pictures\LoESoft - Prod Project\Gam
+e Server v5\wServer\logic\BehaviorDb.cs:line 107
+   at wServer.logic.State.OnDeath(BehaviorEventArgs e) in C:\Users\devwarlt\Pict
+ures\LoESoft - Prod Project\Game Server v5\wServer\logic\State.cs:line 79
+   at wServer.realm.entities.Enemy.Death(RealmTime time) in C:\Users\devwarlt\Pi
+ctures\LoESoft - Prod Project\Game Server v5\wServer\realm\entities\Enemy.cs:lin
+e 70
+   at wServer.realm.entities.Enemy.Damage(Player from, RealmTime time, Int32 dmg
+, Boolean noDef, Boolean fromProjectile, Projectile proj, ConditionEffect[] effs
+) in C:\Users\devwarlt\Pictures\LoESoft - Prod Project\Game Server v5\wServer\re
+alm\entities\Enemy.cs:line 112
+   at wServer.networking.handlers.EnemyHitPacketHandler.Handle(Player player, Re
+almTime time, Int32 targetId, Byte bulletId, Boolean killed, Int32 damage) in C:
+\Users\devwarlt\Pictures\LoESoft - Prod Project\Game Server v5\wServer\networkin
+g\handlers\EnemyHitPacketHandler.cs:line 31
+   at wServer.networking.handlers.EnemyHitPacketHandler.<>c__DisplayClass2_0.<Ha
+ndlePacket>b__0(RealmTime t) in C:\Users\devwarlt\Pictures\LoESoft - Prod Projec
+t\Game Server v5\wServer\networking\handlers\EnemyHitPacketHandler.cs:line 17
+   at wServer.realm.LogicTicker.TickLoop() in C:\Users\devwarlt\Pictures\LoESoft
+ - Prod Project\Game Server v5\wServer\realm\LogicTicker.cs:line 82
